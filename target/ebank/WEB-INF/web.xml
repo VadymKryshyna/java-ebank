@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="
+        http://java.sun.com/xml/ns/javaee
+        http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <servlet>
+        <servlet-name>allPersonController</servlet-name>
+        <servlet-class>com.kryshyna.ebank.controller.PersonAllController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>allPersonController</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addPersonController</servlet-name>
+        <servlet-class>com.kryshyna.ebank.controller.PersonAddController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addPersonController</servlet-name>
+        <url-pattern>/addPerson</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>removePersonController</servlet-name>
+        <servlet-class>com.kryshyna.ebank.controller.PersonRemoveController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>removePersonController</servlet-name>
+        <url-pattern>/removePerson</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>personController</servlet-name>
+        <servlet-class>com.kryshyna.ebank.controller.PersonController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>personController</servlet-name>
+        <url-pattern>/person</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>accountRemoveController</servlet-name>
+        <servlet-class>com.kryshyna.ebank.controller.AccountRemoveController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>accountRemoveController</servlet-name>
+        <url-pattern>/removeAccount</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>accountAddController</servlet-name>
+        <servlet-class>com.kryshyna.ebank.controller.AccountAddController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>accountAddController</servlet-name>
+        <url-pattern>/addAccount</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>accountController</servlet-name>
+        <servlet-class>com.kryshyna.ebank.controller.AccountController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>accountController</servlet-name>
+        <url-pattern>/account</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>transactionRemoveController</servlet-name>
+        <servlet-class>com.kryshyna.ebank.controller.TransactionRemoveController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>transactionRemoveController</servlet-name>
+        <url-pattern>/removeTransaction</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>transactionAddController</servlet-name>
+        <servlet-class>com.kryshyna.ebank.controller.TransactionAddController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>transactionAddController</servlet-name>
+        <url-pattern>/addTransaction</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>transactionAllController</servlet-name>
+        <servlet-class>com.kryshyna.ebank.controller.TransactionAllController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>transactionAllController</servlet-name>
+        <url-pattern>/transaction</url-pattern>
+    </servlet-mapping>
+
+</web-app>
